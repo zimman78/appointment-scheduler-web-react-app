@@ -1,3 +1,4 @@
+const Model = require('../models/index');
 const { Appointment, Slot } = Model;
 const Nexmo = require('nexmo');
 

@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const Schema = mongoose.Schema,
 	model = mongoose.model.bind(mongoose),
 	ObjectId = mongoose.Schema.Types.ObjectId;
@@ -20,3 +22,7 @@ const appointmentSchema = new Schema({
 });
 
 const Appointment = model('Appointment', appointmentSchema);
+
+module.exports = {
+  Appointment, Slot
+};
